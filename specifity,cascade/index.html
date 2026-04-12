@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and cascade</title>
+    <style>
+        h1{
+            color:aqua;
+        }
+         /* speicificty of this sector is 11 */
+        h1.yellow{
+            color:yellow;
+        }
+        /* speicificty of this sector is 10 */
+        .cpurple{
+            color:purple;
+        }
+        /* speicificty of this sector is 10 */
+        .yellow{
+            color:yellow;
+         
+            
+        }
+        /* speicificty of this sector is 10 */
+        .cred{
+            color:red;
+        }
+        /* speicificty of this sector is 10  example of attribute selector*/
+        [data-x=a]{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1  class="yellow cred cpurple" data-x="a">CSS Specificity </h1>
+    </div>
+</body>
+</html>
