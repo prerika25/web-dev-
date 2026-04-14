@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and clear</title>
+    <style>
+        img{
+            
+            float:left;
+        }
+        .card{
+            border:2px solid red;
+        }
+        .cards{
+            border:2px solid black;
+            display:flow-root;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear:both;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width="230px" src="https://cdn.pixabay.com/photo/2020/08/11/03/08/boat-5479122_1280.jpg" alt="">
+        <div class="card">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil sequi quos, expedita in, assumenda vitae suscipit dicta doloremque repudiandae ratione magnam quidem animi adipisci ab illum corporis asperiores quia. Quas soluta cupiditate sequi?</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur unde saepe illo maiores quae dolorum quos impedit voluptatem aliquam veritatis in magnam ad minima labore et, blanditiis aperiam aut architecto. Ab molestias reprehenderit accusantium pariatur quasi aliquam mollitia dolorum vero voluptate ex, beatae quisquam vitae, laboriosam adipisci rem illum eum! Explicabo excepturi quidem distinctio quis aliquid, unde voluptas, iste mollitia atque, et veritatis sit quam magni nihil quasi possimus amet voluptates eaque quod rerum praesentium ipsum ea. Numquam, placeat quisquam rem illum voluptate delectus consectetur doloribus, nam atque temporibus laudantium architecto magni eius unde non iusto ut velit explicabo corrupti. Vero ipsa atque error inventore ipsam rerum tenetur, laudantium ratione repellendus? Magnam dicta neque saepe quaerat debitis, ad, molestias fuga illum, temporibus ullam tempora sapiente labore reprehenderit quibusdam eius ex cum illo iste sequi rem? Minus labore repellat ut neque unde facilis earum dolorum nulla itaque voluptatum. Maxime numquam praesentium, eum ut fuga ex unde totam sapiente eligendi recusandae obcaecati consequuntur molestiae inventore dignissimos aspernatur accusamus est minus nam aut, quae in consectetur quo, perferendis asperiores? Repellendus ipsa esse omnis iure molestiae at, consectetur eaque laboriosam aperiam similique reprehenderit provident, ratione eveniet aspernatur! Minus cumque tempora vel culpa architecto voluptates tempore rem magni omnis temporibus nam aspernatur soluta sed ab, dolore explicabo amet odio ipsum commodi debitis a saepe ex eaque laudantium. Quas aperiam consequatur dolorum corrupti quia neque blanditiis laboriosam, quaerat, perferendis quam molestiae consectetur libero eos, vel iste facere maxime provident qui ex esse omnis temporibus! Qui animi facere ex corporis. Tempore sunt ipsum, vel fuga est officia aut. Officia, cupiditate eligendi? Facere, harum deserunt incidunt suscipit totam iste molestiae porro veritatis dolores, adipisci dolorem dolore, nihil eveniet voluptatum debitis cumque voluptate? Fugiat debitis quod atque, laudantium rerum pariatur quos maiores sint corrupti commodi, reiciendis eos, sequi assumenda consequatur cum impedit dolorum obcaecati. Ut dicta ea distinctio, dignissimos fuga soluta magni nemo incidunt at iure nesciunt illo nobis assumenda quod molestias eaque enim minima natus iusto accusantium nam eum. Iste, nobis!</p>
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
