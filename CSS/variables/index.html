@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color:rgb(255, 0, 153);
+            --seccolor:rgb(189, 26, 86);
+            --defpad: 23px;
+            --defop:0.5;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul li{
+            /* opacity: 0.3; */
+            opacity:var(--defop);
+            list-style: none;
+            padding:var(--defpad);
+            /* padding:34px; */
+            border : 12px solid var(--seccolor);
+
+        }
+        ul{
+            display:flex;
+        }
+        ul li:first-child{
+            --color:pink;
+            background-color: var(--color,blue);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero iure molestiae pariatur ullam expedita fuga deserunt blanditiis nesciunt voluptates tenetur consequuntur ex, quis id omnis debitis eum cupiditate. Voluptate, modi. Eaque facere porro mollitia id a, provident odit commodi hic suscipit accusamus! Mollitia, beatae animi.
+    </div >
 </body>
 </html>
