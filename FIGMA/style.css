@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.main {
+  background-image: url("https://wallpaperaccess.com/full/2703652.png");
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+}
+
+.box {
+  height: 80vh;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 62px;
+  align-items: center;
+}
+
+nav img {
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero input {
+  padding: 10px;
+  width: 250px;
+}
+
+.btn {
+  padding: 5px 10px;
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-red {
+  background-color: red;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(46,44,44);
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+  padding: 50px;
+}
+
+.first img {
+  width: 400px;
+}
+
+.faq {
+  text-align: center;
+  padding: 30px;
+}
+
+.faqbox {
+  background-color: #2d2d2d;
+  padding: 15px;
+  margin: 10px auto;
+  width: 60%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .first {
+    flex-direction: column;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero input {
+    width: 100%;
+  }
+}
