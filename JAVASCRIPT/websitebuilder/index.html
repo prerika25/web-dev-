@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .card{
+            display:flex;
+            border:2px solid black;
+            width:900px;
+            justify-content: center;
+            align-items: center;
+            padding:12px;
+            margin:5px;
+        }
+        .image img{
+            width:200px;
+        }
+        .text h1,p{
+            padding:2px 0;
+        }
+        .image{
+            position:relative;
+        }
+        .capsule{
+            position:absolute;
+            bottom:0;
+            z-index: 10;
+            right:5px;
+            background-color: black;
+            opacity:0.9;
+            color: white;
+            padding:3px;
+            
+            border-radius: 3px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-            
+            <div class="card">
+                <div class="image">
+                    
+                    <div class="capsule">31:22</div>
+                </div>
+                    <div class="text">
+                        <h1>${title}</h1>
+                        <p></p>
+                    </div>
+            </div>`
     </div>
     <script src="script.js"></script>
 </body>
