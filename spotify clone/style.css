@@ -36,10 +36,12 @@
 .heading img{
     width:30px;
 }
+
 .library{
     min-height: 80vh;
     position: relative;
 } 
+
 .footer{
     display: flex;
     font-size: 10px;
@@ -47,7 +49,57 @@
     gap:13px;
     position: absolute;
     bottom:0;
+    padding:10px 0;
 }
 .footer a{
     color:grey;
+}
+.right{
+    margin: 16px 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34,34,34);
+}
+.header > *{
+    padding:20px;   
+}
+.spotifyPlaylists{
+    padding:16px;
+}
+.cardContainer{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    margin:30px;
+}
+.card{
+    width:200px;
+    padding:10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+}
+.card > *{
+    padding-top: 10px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.play{
+    width:28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%; 
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 168px;
+    right: 17px;
+    opacity:0;
+    transition: all 1s ease-out;
 }
