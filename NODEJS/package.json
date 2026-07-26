@@ -8,8 +8,8 @@
   ],
   "license": "ISC",
   "author": "Prerika",
-  
   "main": "server.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -18,5 +18,6 @@
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
     "slugify": "^1.6.9"
-  }
+  },
+  "devDependencies": {}
 }

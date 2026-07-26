@@ -22,5 +22,5 @@
 // import prerika from "./mymodule.js"
 // console.log(obj) 
 
-const a=require("./mymodule2.js")
-console.log(a);
+// const a=require("./mymodule2.js")
+// console.log(a);
